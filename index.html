@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dewata Journeys</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<header class="shadow-lg bg-white sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto gap-3 px-3 py-3 items-center flex justify-between flex-col md:flex-row">
+    <a href="#" class="flex space-x-2 mx-auto md:mx-0">
+      <img src="https://png.pngtree.com/png-vector/20221020/ourmid/pngtree-pura-bedugul-deratan-bali-png-image_6361365.png" alt="nebula" class="w-8 h-8">
+      <span class="text-xl font-bold">Dewata Journeys</span>
+    </a>
+    <div class="space-x-6 mx-auto md:mx-0">
+      <a href="#home" class="hover:text-amber-500">Home</a>
+      <a href="profile.html" class="hover:text-amber-500">Profile</a>
+      <a href="#portofolio" class="hover:text-amber-500">Portofolio</a>
+      <a href="#message" class="hover:text-amber-500">Message</a>
+    </div>
+  </nav>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 py-16">
+
+  <section id="banner" class="rounded-2xl overflow-hidden relative mb-16">
+    <div class="h-96 md:h-[578px] w-full bg-center bg-cover" style="background-image: url('./images/bali.png');">
+      <div class="absolute flex inset-0 justify-center items-center flex-col text-white">
+        <h1 class="text-4xl font-extrabold text-center mb-2" id="welcomeMessage"></h1>
+        <p class="text-lg md:text-xl">Website Tour & Travel Bali</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="headquarter" class="mb-16">
+    <h2 class="text-3xl font-bold border-b-2 border-amber-500 pb-4 mb-10">Our Best Bali Packages</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl border-t-4 border-amber-500 p-8">
+          <div class="w-full bg-amber-100 mb-6 rounded-xl overflow-hidden">
+            <img src="https://theworldtravelguy.com/wp-content/uploads/2020/05/DJI_0910-3.jpg" alt="Ubud Bali" class="w-full h-full">
+          </div>
+          <p class="text-xl font-semibold">Ubud Bali Ricefields</p>
+          <p class="text-sm mt-1">Ubud, Pura Tirta Empul, Tegalalang. Fokus pada seni dan tradisi.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl border-t-4 border-amber-500 p-8">
+          <div class="w-full bg-amber-100 mb-6 mx-auto rounded-xl overflow-hidden">
+            <img src="https://www.balidiscovery.com/wp-content/uploads/2023/04/penida1.jpg" alt="Nusa Penida" class="w-full h-full">
+          </div>
+          <p class="text-xl font-semibold">Nusa Penida Beach</p>
+          <p class="text-sm mt-1">Kelingking Beach, Broken Beach, Snorkeling. Penuh aksi dan pemandangan laut.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl border-t-4 border-amber-500 p-8">
+          <div class="w-full bg-amber-100 mb-6 mx-auto rounded-xl overflow-hidden">
+            <img src="https://www.honeymoondreams.co.uk/wp-content/uploads/2019/08/Top-infinity-pool-in-Bali-Hanging-Gardens-of-Bali.jpg" alt="Pool" class="w-full h-full">
+          </div>
+          <p class="text-xl font-semibold">Luxury Honeymoon Retreat</p>
+          <p class="text-sm mt-1">Private villa, Spa Treatment, Dinner Romantis. Untuk relaksasi premium.</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="message" class="bg-white p-8 md:p-12 rounded-2xl shadow-2xl">
+    <h2 class="text-3xl font-bold mb-8">Message Us</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="lg:col-span-2">
+        <form id="message-form" class="space-y-6">
+          <div>
+            <label for="nama" class="text-sm font-medium">Nama</label>
+            <input type="text" id="nama" name="nama" class="mt-1 w-full rounded-lg border border-gray-500 px-3 py-4 bg-gray-50" placeholder="Masukkan Nama Anda" required>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="tanggal_lahir" class="text-sm font-medium">Tanggal Lahir</label>
+              <input type="date" id="tanggal_lahir" name="tanggal_lahir" class="bg-gray-50 w-full border border-gray-500 mt-1 px-3 py-4 rounded-lg" required>
+            </div>
+            
+          </div>
+
+          <div>
+            <p class="text-sm font-medium text=text-gray-700 mb-3">Jenis Kelamin</p>
+            <div class="flex space-x-6">
+              <div>
+                <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki" class="hidden" checked>
+                <label for="laki-laki" class="px-6 py-2 items-center border border-gray-500 transition-duration-200 rounded-full font-medium hover:bg-amber-500 cursor-pointer">Laki-Laki</label>
+              </div>
+              <div>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan" class="hidden">
+                <label for="perempuan" class="px-6 py-2 items-center border border-gray-500 rounded-full font-medium hover:bg-amber-500 cursor-pointer">Perempuan</label>
+              </div>
+            </div> 
+          </div>
+
+          <div>
+              <label for="pesan" class="text-sm font-medium">Pesan</label>
+              <textarea name="pesan" id="pesan" rows="4" class="mt-1 w-full px-4 py-3 border border-gray-500 rounded-lg bg-gray-50 shadow-sm" placeholder="Tulis Pesan Anda..." required></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="w-full sm:w-auto px-8 py-3 rounded-lg shadow-lg bg-amber-500 hover:bg-amber-600 text-white">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="lg:col-span-1 bg-amber-50 p-6 rounded-xl border space-y-4 border-amber-300 shadow-lg">
+        <p class="text-sm font-bold text-amber-700 border-b border-amber-200 pb-3 mb-2">Submitted Data Preview :</p>
+        <div class="space-y-2 text-sm">
+          <p><span class="font-semibold text-amber-600">Nama:</span> <span id="info-nama">Rizky Sanosa</span></p>
+          <p><span class="font-semibold text-amber-600">Tanggal Lahir:</span> <span id="info-tanggal-lahir">14/12/1996</span></p>
+          <p><span class="font-semibold text-amber-600">Jenis Kelamin:</span> <span id="info-jenis-kelamin">Laki-laki</span></p>
+          <p><span class="font-semibold text-amber-600">Pesan:</span> <span id="info-pesan">Lagi belajar buat website</span></p>
+        </div>
+        
+        <div class="pt-4 border-t border-amber-200"></div>
+      </div>
+
+    </div>
+</main>
+<footer class="bg-gray-100 border-t border-gray-200 py-6 mt-16">
+  <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+    Created By <a href="#" class="text-amber-600 font-semibold">Rizky Sanosa</a> | &copy; 2025
+  </div>
+  </footer>
+</body>
+<script src="/js/script.js"></script>
+</html>
